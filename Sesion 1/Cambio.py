@@ -1,4 +1,4 @@
-print("Ingrese la monedas que tenga")
+print("Ingrese las monedas que tenga")
 #Guardamos la cantidad de monedas que tenga el usuario
 moneda_10= int(input("monedas de 10: "))
 moneda_5= int (input("monedas de 5: "))
