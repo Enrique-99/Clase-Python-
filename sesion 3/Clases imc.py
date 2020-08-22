@@ -19,25 +19,21 @@ class Persona:
             return 1
 
     def es_mayor_edad(self):
-        return  true if self.edad>18 else False
+        return  True if self.edad>18 else False
 
     def comprobar_sexo(self):
-        if self.sexo=="H":
-            return "H"
-        elif self.sexo=="M":
-            return "M"
-        else:
-            return"H"
+        if self.sexo.upper() != "H" and self.sexo.upper()!="M":
+            self.sexo= "H"
 
     def Imprimir_informacion(self):
-        print("Su nombre es: ",self.Nombre)
+        print("Su nombre es: ",self.nombre)
         print("Su edad es: ", str(self.edad))
         print("Su DNI es: ", str(self.DNI))
         print("El sexo es: ", self.sexo)
         print("Su peso es: ", str(self.peso))
         print("Su altura es: ",str(self.altura ))
 
-    def genera_DNI():
+    def genera_DNI(self):
         self.DNI =random.randint(10000000, 9999999)
 
     def capturar_informacion(self):
