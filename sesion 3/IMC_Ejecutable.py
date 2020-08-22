@@ -1,5 +1,5 @@
 from class_person_module import Persona
-
+x=5
 while True:
 
     print("---------- MENU ----------")

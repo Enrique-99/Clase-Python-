@@ -1,6 +1,6 @@
 import random
 
-x=5
+x=3
 class Persona:
     def __init__(self, nombre="", edad=0, DNI=0, sexo="", peso=0.0, altura=0.0):
         self.nombre = nombre        
