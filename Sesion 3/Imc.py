@@ -1,6 +1,6 @@
 continuar="S"
 lista=[]
-
+x=5
 while continuar.upper()=="S":
     nombre= input("captura el nombre de la persona: ")
     peso= float(input("captura el peso: "))
