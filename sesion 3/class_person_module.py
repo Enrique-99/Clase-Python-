@@ -43,4 +43,24 @@ class Persona:
         self.peso = float(input("Captura tu peso:"))
         self.altura = float(input("Captura tu altura:"))
     
-    
+    def escribir_archivo(self):
+        try:
+            archivo = open("persona.csv", "a")
+            archivo.write(self.nombre + "," + str(self.edad) + "," + str(self.DNI) \
+                    + self.sexo +"," + str(self.peso) + "," + str(self.altura) + "\n")
+            archivo.close()
+            print("Archivo guardado correctamente!")
+        except:
+            print("Hubo un error al escribir en el archivo")
+
+    def leer_archivo(self):
+        try:
+            archivo = open("persona.csv", "r")
+            while True:
+                linea = archivo.readline()
+                if not linea:
+                    break
+                print(linea)
+            archivo.close()
+        except:
+            print("Error al leer el archivo!")

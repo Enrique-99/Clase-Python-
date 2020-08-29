@@ -16,6 +16,10 @@ while True:
         print("Peso:" + str(p.calcular_IMC()))
         print("Mayor de Edad:" + str(p.es_mayor_edad()))
         p.imprimir_informacion()
-     
+        p.escribir_archivo()
+    elif opcion == "2":
+        p = Persona()
+        p.leer_archivo()
     else:
         break
+
